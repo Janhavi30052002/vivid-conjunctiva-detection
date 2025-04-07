@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card } from "@/components/ui/card";
 import { UsersRound } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   return (
@@ -47,8 +48,11 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-12 text-center">Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <UsersRound className="w-16 h-16 text-primary" />
+              <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                <Avatar className="w-full h-full">
+                  <AvatarImage src="/lovable-uploads/51cba85d-503d-4bd3-96c7-99051b46e4b3.png" alt="Janhavi Belnekar" className="object-cover" />
+                  <AvatarFallback>JB</AvatarFallback>
+                </Avatar>
               </div>
               <h3 className="text-xl font-semibold mb-1">Janhavi Belnekar</h3>
               <p className="text-gray-600 mb-2">Student</p>
