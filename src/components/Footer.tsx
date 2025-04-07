@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MicroscopeIcon } from "lucide-react";
@@ -50,7 +49,7 @@ const Footer = () => {
         
         <div className="mt-10 pt-6 border-t border-gray-200">
           <p className="text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} AnemiaDetect. All rights reserved. College Research Project.
+            © {new Date().getFullYear()} AnemiaDetect. All rights reserved. RBL-II A-20.
           </p>
         </div>
       </div>
