@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card } from "@/components/ui/card";
+import { UsersRound } from "lucide-react";
 
 const About = () => {
   return (
@@ -45,16 +46,38 @@ const About = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((member) => (
-              <Card key={member} className="p-6 text-center hover:shadow-lg transition-shadow">
-                <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                <h3 className="text-xl font-semibold mb-1">Team Member {member}</h3>
-                <p className="text-gray-600 mb-2">Role / Specialization</p>
-                <p className="text-gray-600 text-sm">
-                  Brief description about the team member and their contribution to the project.
-                </p>
-              </Card>
-            ))}
+            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <UsersRound className="w-16 h-16 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-1">Janhavi Belnekar</h3>
+              <p className="text-gray-600 mb-2">Student</p>
+              <p className="text-gray-600 text-sm">
+                Contributing to research, development, and implementation of the anemia detection system.
+              </p>
+            </Card>
+            
+            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <UsersRound className="w-16 h-16 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-1">Anuj Dube</h3>
+              <p className="text-gray-600 mb-2">Student</p>
+              <p className="text-gray-600 text-sm">
+                Working on algorithm development and system integration for the anemia detection project.
+              </p>
+            </Card>
+            
+            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <UsersRound className="w-16 h-16 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-1">Moksha Kothari</h3>
+              <p className="text-gray-600 mb-2">Student</p>
+              <p className="text-gray-600 text-sm">
+                Focused on data analysis and machine learning model training for accurate anemia detection.
+              </p>
+            </Card>
           </div>
         </div>
       </section>
